@@ -12,6 +12,9 @@ data_dict = {
 }
 fur_data = pandas.DataFrame(data_dict)
 fur_data.to_csv("fur_data.csv")
+for(index, row) in fur_data.iterrows():
+    print(row.count)
+
 #
 #
 # data = pandas.read_csv('weather_data.csv')
