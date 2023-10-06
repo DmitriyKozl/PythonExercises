@@ -40,6 +40,6 @@ for exercise in data["exercises"]:
 print(data_dict)
 
 workout_data = pandas.DataFrame([data_dict])
-workout_data.to_csv("workout.csv")
+workout_data.to_csv("workout.csv", mode='a',header=False, index=False)
 for (index, row) in workout_data.iterrows():
     print(row.count)
