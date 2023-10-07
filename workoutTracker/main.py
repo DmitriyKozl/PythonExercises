@@ -26,7 +26,7 @@ response = requests.post(url=exercise_endpoint, json=exercise_params, headers=he
 data = response.json()
 # exercises = data['exercises'][0]
 # print(exercises['nf_calories'])
-today = datetime.now().strftime('%w/%m/%Y')
+today = datetime.now().strftime('%d/%m/%Y')
 time = datetime.now().strftime('%H:%M')
 for exercise in data["exercises"]:
     data_dict = {
